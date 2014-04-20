@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>计算机视觉基础 - 课程中心</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/site_media/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/site_media/css/style.css" rel="stylesheet">
+    <link href="/site_media/css/jsslide.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="/site_media/images/logo.png" class="navbar-brand"><a class="navbar-brand" href="index.html">课程中心</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form" action="" method="post">
+
+
+                    <div class="form-group">
+                        <input type="text" name="username" placeholder="Ecard" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="password" placeholder="Password" class="form-control">
+                    </div>
+                    <!--button type="submit" class="btn btn-success">Sign in</button-->
+                    {% csrf_token %}
+                    <button type="submit" class="button special" onfocus="this.blur()">Sign in</button>
+                    
+                </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </div>
+    <!-- Banner -->
+    <section id="banner">
+        <!--
+            ".inner" is set up as an inline-block so it automatically expands
+            in both directions to fit whatever's inside it. This means it won't
+            automatically wrap lines, so be sure to use line breaks where
+            appropriate (<br />).
+        -->
+        <div class="inner">
+            <header>
+                <!--h2-banner>TWENTY</h2-banner-->
+                <h2>computer
+                    <br>vision</h2>
+            </header>
+            <p>计算机视觉基础
+                <br>
+                <br>课程中心</p>
+            <footer>
+                <ul class="buttons vertical">
+                    <li><a href="#main" class="button fit scrolly">Tell Me More</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- SlidesJS Required: Start Slides -->
+                    <!-- The container is used to define the width of the slideshow -->
+                    <div class="container">
+                        <div id="slides">
+                            <img src="/site_media/images/slide01.jpg">
+                            <img src="/site_media/images/slide02.jpg">
+                            <img src="/site_media/images/slide03.jpg">
+                            <img src="/site_media/images/slide04.jpg">
+                        </div>
+                    </div>
+                    <!-- End SlidesJS Required: Start Slides -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>What's New from Teacher</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>What's New from Students</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Links</h2>
+                <li><a href="#">理论教学资源</a>
+                </li>
+                <li><a href="#">实践教学资源</a>
+                </li>
+                <li><a href="#">自主研学资源</a>
+                </li>
+                <li><a href="#">素质教育资源</a>
+                </li>
+                <li><a href="#">校外相关资源</a>
+                </li>
+                <p></p>
+                <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <footer id="footer">
+        <span class="copyright">&copy; 2014 All rights reserved.</span>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/site_media/js/jquery.min.js"></script>
+    <script src="/site_media/js/bootstrap.min.js"></script>
+    <!--my js for template-->
+    <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+    <script src="/site_media/js/jquery.slides.min.js"></script>
+    <script>
+    $(function() {
+        $('#slides').slidesjs({
+            width: 940,
+            height: 528,
+            play: {
+                active: true,
+                auto: true,
+                interval: 4000,
+                swap: true
+            }
+        });
+    });
+    </script>
+    <!-- End SlidesJS Required -->
+</body>
+
+</html>
