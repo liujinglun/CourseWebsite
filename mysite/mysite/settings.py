@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'uploadfile',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,11 +83,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_PATH= os.path.join(BASE_DIR, 'templates/media').replace('\\','/')
+DOUCMENT_ROOT = os.path.join(BASE_DIR, 'documents')  #used to store file 
 
 
 # TEMPLATE settings
 TEMPLATE_DIRS = {
     os.path.join(BASE_DIR, 'templates'),
 }
+
 
 

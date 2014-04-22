@@ -83,7 +83,8 @@
 								</div>
 
 								<div id="dropzone">
-									<form action="//dummy.html" class="dropzone">
+									<form  method="post" action="/uploadfile/" enctype="multipart/form-data" class="dropzone">
+										    {% csrf_token %}  
 										<div class="fallback">
 											<input name="file" type="file" multiple />
 										</div>
