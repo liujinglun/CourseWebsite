@@ -1,4 +1,6 @@
 from mysite.settings import DOUCMENT_ROOT
+from .models import File
+
 
 
 
