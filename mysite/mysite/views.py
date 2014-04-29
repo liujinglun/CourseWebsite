@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-  
 from django.http import HttpResponse
 from django.template import Template, Context  # 记住导入
 from django.template.loader import get_template  # 记得导入
